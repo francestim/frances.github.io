@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://kit.fontawesome.com/06a31b2f65.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/styleabout.css">
+	<link rel="stylesheet" href="css/stylenavigation.css">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+
+	<head>  
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"> 
+		
+        <style> 
+		body {
+		margin: 0; 
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+		background-color: whitesmoke;
+
+		}
+		
+		.bg-image {
+			background-image: url("img/cover Gundam.jpg");
+			background-color: #0563b5;
+			height: 600px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		.bg-text {
+			text-align: center;
+			font-style: system-ui;
+			position: absolute;
+			left: 12%;
+            top: 25%;
+			color: #0563b5;
+		}
+
+		.textnav {
+			float: left;
+			color: whitesmoke;
+			font-size: 25px;
+			font-style: italic;
+		}
+
+		.topnav {
+			background: rgb(29,129,205);
+			background: linear-gradient(0deg, rgba(29,129,205,1) 0%, rgba(5,99,181,1) 100%);
+			overflow: hidden;
+		}
+
+		.topnav a {
+			  float: right;
+			  display: block;
+			  color: whitesmoke;
+			  font-weight: 750px;
+			  text-align: center;
+			  padding: 30px 30px;
+			  text-decoration:solid;
+			  font-size: 19px;
+		}
+
+		.topnav a:hover {
+			  background-color: whitesmoke;
+			  color: #0563b5;
+		}
+
+		.dropdown:hover .dropbtn {
+		color: #0563b5;
+		}
+
+		.dropdown {
+		float: right;
+		overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+		font-size: 25px;  
+		border: none;
+		outline: none;
+		color: whitesmoke;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+		}
+
+		.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: whitesmoke;
+		min-width: 10px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		}
+
+		.dropdown-content a {
+		float: none;
+		color: #0563b5;
+		padding: 
+		text-decoration: none;
+		display: block;
+		text-align: right;
+		}
+
+		.dropdown-content a:hover {
+		background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+		display:block;
+		}
+
+		.ppicture {
+			padding: 10px;
+		}
+		
+		* {
+  		box-sizing: border-box;
+		}
+
+		.si {
+		font-size: xx-large;
+		color: #0563b5;
+		text-align: center;
+		}
+
+		.column {
+  		float: left;
+ 		 width: 15%;
+ 		 padding: 5px;
+		}
+		
+		.row::after {
+  		content: "";
+		clear: both;
+		display: table;
+		}
+
+		</style>
+
+		<style> 
+
+		#gradient {
+	    	background: rgb(14,110,190);
+			background: linear-gradient(0deg, rgba(14,110,190,1) 0%, rgba(29,129,205,1) 50%, rgba(5,99,181,1) 100%);		font-size: x-large;
+			color: whitesmoke;
+			padding-bottom: 10px;
+			}
+
+		footer {
+			 
+			  padding: 15px;
+			  color: whitesmoke;
+			  display: flex;
+			  width: 100%;
+			  background: rgb(14,110,190);
+			  background: linear-gradient(0deg, rgba(14,110,190,1) 0%, rgba(29,129,205,1) 100%);
+
+			}
+
+		#footer {
+		color:whitesmoke; 
+		padding-left 1000px;
+		}	
+
+    html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: right;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgba(29,129,205,1);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+		</style>
+	</head>
+
+	<body> 
+
+		<div class="topnav" id="myTopnav"> 
+			<div class="textnav" style="position:relative; left:80px; top:1px;" ><a href=index.html><strong><u style="font-size: 23.5px;">frances. </u></strong></a></div>
+			<a href=index.html>Home</a>	
+
+		<div class="dropdown">
+			<button class="dropbtn"> <a href=gundam.html>Gundam (My Collections)</a> <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"> 
+				
+			<a href="hg.html"><img src="img/HGlogo.jpeg" alt="HG" class="imgLogo"></a>
+			<a href="rg.html"><img src="img/RGlogo.jpeg" alt="HG" class="imgLogo"></a>
+			<a href="mg.html"><img src="img/MGlogo.jpeg" alt="HG" class="imgLogo"></a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn"> <a href=specs.html>My Specs</a> <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"> 
+			<a href="laptopreview.html">Laptop</a>
+			<a href="monitorreview.html">Monitor</a>
+			<a href="mousereview.html">Mouse</a>
+			<a href="keyboardreview.html">Keyboard</a>	
+			<a href="switchreview.html">Game Console</a>	
+			</div>
+		</div>
+      
+		<div class="dropdown">
+			<button class="dropbtn"> <a href=music.html>My Music</a> <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"> 
+					
+			<a href="pop.html"><img src="img/poplogo.png" alt="HG" class="imgLogo2"></a>
+			<a href="rock.html"><img src="img/rocklogo.png" alt="HG" class="imgLogo2"></a>
+			<a href="opm.html"><img src="img/opmlogo.jpg" alt="HG" class="imgLogo2"></a>
+			</div>
+		</div>
+            <a href=about.html>About</a>
+		</div>
+
+	<div class="bg-image">
+		<div class="bg-text">
+			<h1 style="font-size:180px">My Collection</h1>
+		</div>
+	</div>
+
+    
+	<div id = "about" style="font-size: 30px;" align="center"><h3 style="color: rgb(56,160,247);"> Master Grade Gunpla </h3>
+        <img src="img/mg1.jpg" onmouseover="myFunc(this)" onclick="image1()" border="2" style="width: 100px; border-color: rgb(56,160,247); border-radius: 20%;"> 
+        <img src="img/mg2.jpg" onmouseover="myFunc(this)" onclick="image2()" border="2" style="height: 100px; width: 100px; border-color: rgb(56,160,247); border-radius: 20%;">
+        <img src="img/mg3.jpg" onmouseover="myFunc(this)" onclick="image3()" border="2" style="width: 100px; border-color: rgb(56,160,247); border-radius: 20%;">
+        <img src="img/mg4.jpg" onmouseover="myFunc(this)" onclick="image4()" border="2" style="width: 100px; border-color: rgb(56,160,247); border-radius: 20%;">
+		<img src="img/mg5.jpg" onmouseover="myFunc(this)" onclick="image5()" border="2" style="height: 100px; width: 100px; border-color: rgb(56,160,247); border-radius: 20%;">
+
+    </div>
+
+    <script>
+    var.totalCount = 20;
+
+    function ChangeBack() {
+        var.num = Math.ceil( Math.random() * totalCount );
+        document.body.background = 'colors/' +num+ '.jpg';
+        document.body.style.backgroundRepeat = "repeat";
+    }
+    </script>
+    
+    <script>
+    function myFunc(img){
+        var picture=document.getElementById("picture");
+        picture.src=img.src;
+    }
+
+        function image1(){
+            window.alert("Freedom Gundam");
+        }
+
+        function image2(){
+            window.alert("Strike Ootori");
+        }
+
+        function image3(){
+            window.alert("Strike Freedom Gundam");
+        }
+
+        function image4(){
+            window.alert("Tallgeese I");
+        }
+
+		function image5(){
+            window.alert("Qanta Full Saber");
+        }
+    </script>
+
+    <div style="padding: 20px"> 
+    <center><img id="picture" border ="4" width="800px" height="600px" style="border-radius: 20%; border-color: rgba(29,129,205,1);" onclick="ChangeBack()"></center>
+    </div>
+
+
+	</body>
+         
+	<footer>
+		<div>
+		  <p ><strong> Follow me and my works through: </strong></p>
+		</div>
+
+		<div>
+		  <ul id="footer">
+			<li><a href = "https://www.facebook.com/frances.deguzman.33/" style="color: whitesmoke;"> Facebook </a></li>
+			<li>Email: francestimothy9@gmail.com</li>
+			<li>Mobile: (+63)99778090999</li>
+		  </ul>
+		</div>
+			
+	</footer>
+
+</html>

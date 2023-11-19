@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<script src="https://kit.fontawesome.com/06a31b2f65.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<link rel="stylesheet" media = "screen and (min-width:320px) and (max-width: 480px)" href="css/phone.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/stylenavigation.css">
+
+		<style> 
+		body {
+		margin: 0; 
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+		background: rgb(14,110,190);
+		background: linear-gradient(0deg, rgba(14,110,190,1) 0%, rgba(29,129,205,1) 50%, rgba(5,99,181,1) 100%);		font-size: x-large;
+
+		}
+		
+		.bg-image {
+			background-image: url("img/myspecs.jpg");
+			background-color: #0563b5;
+			height: 600px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		.bg-text {
+			text-align: center;
+			font-style: system-ui;
+			position: absolute;
+			top: -12%;
+			left: 20%;
+			color: #0563b5;
+		}
+		.textnav {
+			float: left;
+			color: whitesmoke;
+			font-size: 25px;
+			font-style: italic;
+		}
+
+		.topnav {
+			background: rgb(29,129,205);
+			background: linear-gradient(0deg, rgba(29,129,205,1) 0%, rgba(5,99,181,1) 100%);
+			overflow: hidden;
+		}
+
+		.topnav a {
+			  float: right;
+			  display: block;
+			  color: whitesmoke;
+			  font-weight: 750px;
+			  text-align: center;
+			  padding: 30px 30px;
+			  text-decoration:solid;
+			  font-size: 19px;
+		}
+
+		.topnav a:hover {
+			  background-color: whitesmoke;
+			  color: #0563b5;
+		}
+
+		.dropdown:hover .dropbtn {
+
+			  color: #0563b5;
+		}
+
+		.dropdown {
+		float: right;
+		overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+		font-size: 25px;  
+		border: none;
+		outline: none;
+		color: whitesmoke;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+		}
+
+		.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: whitesmoke;
+		width: 200px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		}
+
+		.dropdown-content a {
+		float: none;
+		color: #0563b5;
+		text-decoration: none;
+		display: block;
+		text-align: right;
+		}
+
+		.dropdown-content a:hover {
+		background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+		display:block;
+		}
+
+		.imgLogo {
+		display: block;
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 75%;
+		}
+
+		.introtext{
+			font-size: 30px;
+			padding-bottom: 0%;
+			position: relative;
+			top: 22px;
+		}
+		</style>
+
+		<style>
+
+		.grid {
+			display: grid;
+			grid-template-columns: 0.20fr repeat(3, 1fr) 0.20fr;
+			grid-template-rows: repeat(2, 1fr);
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+			grid-gap: 0.1em;
+			padding-top: 1.5%;
+			padding-bottom: 1%;
+		}
+
+		.div1 { grid-area: 1 / 2 / 2 / 3; 
+		background: rgb(14,110,190);
+		background: linear-gradient(0deg, rgba(14,110,190,1) 0%, rgba(29,129,205,1) 100%);
+		border-style: solid;
+  		border-color:rgba(56,160,247,1);
+		border-radius: 15px;
+		}
+		.div2 { grid-area: 1 / 3 / 2 / 4; 
+		background: rgb(56,160,247);
+		background: linear-gradient(0deg, rgba(56,160,247,1) 0%, rgba(29,139,223,1) 100%);
+		border-style: solid;
+  		border-color:#0563b5;
+		border-radius: 15px;
+		}
+		.div3 { grid-area: 1 / 4 / 2 / 5; 
+		background: rgb(14,110,190);
+		background: linear-gradient(0deg, rgba(14,110,190,1) 0%, rgba(29,129,205,1) 100%);
+		border-style: solid;
+  		border-color:rgba(56,160,247,1);
+		border-radius: 15px;
+		}
+		.div4 { grid-area: 2 / 2 / 3 / 3; 
+		background: rgb(56,160,247);
+		background: linear-gradient(0deg, rgba(56,160,247,1) 0%, rgba(29,139,223,1) 100%);
+		border-style: solid;
+  		border-color:#0563b5;
+		border-radius: 15px;
+		}
+		.div5 { grid-area: 2 / 3 / 3 / 4; 
+		background: rgb(14,110,190);
+		background: linear-gradient(0deg, rgba(14,110,190,1) 0%, rgba(29,129,205,1) 100%);
+		border-style: solid;
+  		border-color:rgba(56,160,247,1);
+		border-radius: 15px;
+		}
+
+		.img1 {
+		height: 50%;
+ 		width: 50%;
+		display: block;
+      	margin: 0 auto;
+		margin-top: 1%;
+		border-radius: 15px;
+		position: relative;
+		top: 12%;
+		}
+
+		.gridtext {
+		color: whitesmoke;
+		position: relative;
+		top: 8%;
+		}
+
+		</style>
+
+		<style> 
+
+		.bg-body {
+		    font-size: x-large;
+			background-color: whitesmoke;
+			padding-bottom: 10px;
+			}
+
+		footer {
+			 
+			  padding: 15px;
+			  color: whitesmoke;
+			  display: flex;
+			  width: 100%;
+			  background: rgb(14,110,190);
+			  background: linear-gradient(0deg, rgba(14,110,190,1) 0%, rgba(29,129,205,1) 100%);
+			  font-size: 16px;
+
+			}
+
+		#footer {
+		
+		color:whitesmoke;
+			 
+		}	
+
+		</style>
+	</head>
+
+	<body> 
+
+		<div class="topnav" id="myTopnav"> 
+			<div class="textnav" style="position:relative; left:80px; top:1px;" ><a href=index.html><strong><u style="font-size: 23.5px;">frances. </u></strong></a></div>
+			<a href=index.html>Home</a>	
+
+		<div class="dropdown">
+			<button class="dropbtn"> <a href=gundam.html>Gundam (My Collections)</a> <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"> 
+				
+			<a href="hg.html"><img src="img/HGlogo.jpeg" style="width: 100%;" alt="HG" class="imgLogo"></a>
+			<a href="rg.html"><img src="img/RGlogo.jpeg" style="width: 100%;" alt="HG" class="imgLogo"></a>
+			<a href="mg.html"><img src="img/MGlogo.jpeg" style="width: 100%;" alt="HG" class="imgLogo"></a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn"> <a href=specs.html>My Specs</a> <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"> 
+			<a href="laptopreview.html">Laptop</a>
+			<a href="monitorreview.html">Monitor</a>
+			<a href="mousereview.html">Mouse</a>
+			<a href="keyboardreview.html">Keyboard</a>	
+			<a href="switchreview.html">Game Console</a>	
+			</div>
+		</div>
+      
+		<div class="dropdown">
+			<button class="dropbtn"> <a href=music.html>My Music</a> <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"> 
+					
+			<a href="pop.html"><img src="img/poplogo.png" alt="HG" class="imgLogo2"></a>
+			<a href="rock.html"><img src="img/rocklogo.png" alt="HG" class="imgLogo2"></a>
+			<a href="opm.html"><img src="img/opmlogo.jpg" alt="HG" class="imgLogo2"></a>
+			</div>
+		</div>
+            <a href=about.html>About</a>
+		</div>
+
+		<div class="bg-image">
+			<div class="bg-text">
+				<h1 style="font-size:220px">My Specs</h1>
+			</div>
+		</div>
+
+	
+		
+		<div class = introtext> <p><strong><font color = "whitesmoke"><center> &nbsp;Current Specs (2021~) </center></font></strong></p></div>
+
+		<br></br> 
+
+		<div class="bg-body"> 
+
+		<div class="grid">
+			<div class="div1"> <a href=laptopreview.html> <img src="img/laptop.jpg" alt="An Acer Laptop" class="img1"> </a> 
+				<div class = "gridtext"> <h3> <center> Laptop </center></h3> 
+					<P><center><span>Product: Nitro AN715-51</span> </center>
+					<center><span>Company: Acer</span></center></P>
+				</div> 
+			</div>
+			
+			<div class="div2"> <a href=monitorreview.html><img src="img/monitor.jpg" alt="KOORUI Monitor" class="img1"> </a> 
+				<div class = "gridtext"> <h3> <center> Monitor </center></h3> 
+				<P><center><span>Product: 24N2A </span> </center>
+				<center><span>Company: KOORUI </span></center></P>
+				</div> 
+			</div>	
+
+			<div class="div3"> <a href=mousereview.html><img src="img/mouse.jpg" alt="Orochin V2 Mouse" class="img1"> </a> 
+				<div class = "gridtext"> <h3> <center> Mouse </center></h3> 
+					<P><center><span>Product: Orochi V2</span> </center>
+					<center><span>Company: Razer</span></center></P>
+					</div> 
+			</div>	
+
+			<div class="div4"> <a href=keyboardreview.html><img src="img/keyboard.jpg" alt="RK100 Keyboard" class="img1"> </a> 
+				<div class = "gridtext"> <h3> <center> Keyboard </center></h3> 
+				<P><center><span>Product: RK100</span> </center>
+				<center><span>Company: Royal Kludge</span></center></P>
+				</div> 
+			</div>	
+
+			<div class="div5"> <a href=switchreview.html><img src="img/switch2.jpg" alt="Nintendo Switch v2" class="img1"> </a> 
+				<div class = "gridtext"> <h3> <center> Game Console (Bonus Device) </center></h3> 
+					<P><center><span>Product: Switch V2</span> </center>
+					<center><span>Company: Nintendo</span></center></P>
+					</div> 
+			</div>	
+
+		</div>
+
+	</body>
+
+
+	<footer>
+		<div>
+		  <p ><strong> Follow me and my works through: </strong></p>
+		</div>
+
+		<div>
+		  <ul id="footer">
+			<li><a href = "https://www.facebook.com/frances.deguzman.33/" style="color: whitesmoke;"> Facebook </a></li>
+			<li>Email: francestimothy9@gmail.com</li>
+			<li>Mobile: (+63)99778090999</li>
+		  </ul>
+		</div>
+			
+	</footer>
+
+</html>

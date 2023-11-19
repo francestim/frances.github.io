@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<script src="https://kit.fontawesome.com/06a31b2f65.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<link rel="stylesheet" media = "screen and (min-width:320px) and (max-width: 480px)" href="css/phone.css">
+		<link rel="stylesheet" href="css/stylenavigation.css">
+
+		<style> 
+		
+		body {
+		margin: 0; 
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+		background-color: whitesmoke;
+		}
+		
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;  
+       }
+
+		.bg-image {
+			background-image: url("img/cover Gundam.jpg");
+			background-color: #0563b5;
+			height: 600px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		.bg-text {
+			text-align: center;
+			font-style: system-ui;
+			position: absolute;
+			left: 12%;
+			color: #0563b5;
+		}
+
+		.topnav {
+			background: rgb(29,129,205);
+			background: linear-gradient(0deg, rgba(29,129,205,1) 0%, rgba(5,99,181,1) 100%);
+			overflow: hidden;
+		}
+
+		.topnav a {
+			  float: right;
+			  display: block;
+			  color: whitesmoke;
+			  text-align: center;
+			  padding: 30px 30px;
+			  text-decoration:solid;
+			  font-size: 19px;
+		}
+
+		.topnav a:hover {
+			  background-color: whitesmoke;
+			  color: #0563b5;
+		}
+
+		.dropdown:hover .dropbtn {
+		color: #0563b5;
+		}
+
+		.dropdown {
+		float: right;
+		overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+		font-size: 25px;  
+		border: none;
+		outline: none;
+		color: whitesmoke;
+		background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+		}
+
+		.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: whitesmoke;
+		min-width: 10px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		}
+
+		.dropdown-content a {
+		float: none;
+		color: #0563b5;
+		padding: 
+		text-decoration: none;
+		display: block;
+		text-align: right;
+		}
+
+		.dropdown-content a:hover {
+		background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+		display:block;
+		}
+
+		.ppicture {
+			padding: 10px;
+		}
+		
+		* {
+  		box-sizing: border-box;
+		}
+
+		.introtext{
+			font-size: 19px;
+
+		}
+
+		.column {
+  		float: left;
+ 		 width: 15%;
+ 		 padding: 5px;
+		}
+		
+		.row::after {
+  		content: "";
+		clear: both;
+		display: table;
+		}
+
+		</style>
+
+		<style> 
+
+		#gradient {
+		    background: rgb(14,110,190);
+			background: linear-gradient(0deg, rgba(14,110,190,1) 0%, rgba(29,129,205,1) 50%, rgba(5,99,181,1) 100%);		font-size: x-large;
+			color: whitesmoke;
+			font-size: 19px;
+			padding-bottom: 2%;
+			}
+
+		footer {
+			 
+			  padding: 15px;
+			  color: whitesmoke;
+			  display: flex;
+			  width: 100%;
+			  background: rgb(14,110,190);
+			  background: linear-gradient(0deg, rgba(14,110,190,1) 0%, rgba(29,129,205,1) 100%);
+
+			}
+
+		#footer {
+		
+		color:whitesmoke;
+			 
+		}	
+
+		</style>
+
+		<style> 
+		.grid1 {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 0.25fr repeat(2, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		padding-top: 40px;
+		}
+
+		.div1 { grid-area: 1 / 2 / 2 / 3; 
+		font-size: 38px;
+		color: #0563b5;
+		padding-right: 3px;
+		padding-bottom: 40px;
+		}
+
+		.div2 { grid-area: 1 / 3 / 2 / 4; 
+		padding-left: 3px;
+		padding-bottom: 40px;
+		font-size: 19px;
+		}
+		.div3 { grid-area: 2 / 2 / 3 / 3; 
+		
+		}
+		.div4 { grid-area: 2 / 3 / 3 / 4; 
+		
+		}
+		.div5 { grid-area: 3 / 2 / 4 / 4; 
+		
+		}
+
+		.img1{
+		height: 100%;
+ 		width: 100%;
+		display: block;
+      	border-color: #0563b5;
+		border-style: solid;
+		border-right-width: 2.5px;
+		border-bottom-width: 2.5px;
+		border-top-width: 5px;
+		border-left-width: 5px;
+		}
+
+		.img2{
+		height: 100%;
+ 		width: 100%;
+		display: block;
+      	border-color: #0563b5;
+		border-style: solid;
+		border-left-width: 2.5px;
+		border-bottom-width: 2.5px;
+		border-top-width: 5px;
+		border-right-width: 5px;
+		}
+
+		.img3{
+		height: 100%;
+ 		width: 100%;
+		display: block;
+      	border-color: #0563b5;
+		border-style: solid;
+		border-top-width: 2.5px;
+		border-bottom-width: 5px;
+		border-right-width: 5px;
+		border-left-width: 5px;
+		}
+
+		.grid2 {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(2, 0.35fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		}
+
+		.div2-1 { grid-area: 1 / 2 / 2 / 5; 
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 19px;
+		}
+		.div2-2 { grid-area: 2 / 2 / 3 / 3; 
+		padding: 5px;
+		padding-bottom: 40px;
+		}
+
+		.div2-3 { grid-area: 2 / 3 / 3 / 4; 
+		padding: 5px;
+		padding-bottom: 40px;
+		}
+		.div2-4 { grid-area: 2 / 4 / 3 / 5; 
+		padding: 5px;
+		padding-bottom: 40px;
+		}
+
+		.img2-1{
+		height:100%;
+ 		width:100%;
+		display: block;
+		}
+
+		</style>
+	</head>
+
+	<body> 
+
+		<div class="topnav" id="myTopnav"> 
+			<div class="textnav" style="position:relative; left:80px; top:1px;"><a href=index.html><strong><u class="textnav">frances.</u></strong></a></div>
+
+			<a href=index.html>Home</a>	
+
+		<div class="dropdown">
+			<button class="dropbtn"> <a href=gundam.html>Gundam (My Collections)</a> <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"> 
+				
+			<a href="hg.html"><img src="img/HGlogo.jpeg" alt="HG" class="imgLogo"></a>
+			<a href="rg.html"><img src="img/RGlogo.jpeg" alt="RG" class="imgLogo"></a>
+			<a href="mg.html"><img src="img/MGlogo.jpeg" alt="MG" class="imgLogo"></a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn"> <a href=specs.html>My Specs</a> <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"> 
+			<a href="laptopreview.html">Laptop</a>
+			<a href="monitorreview.html">Monitor</a>
+			<a href="mousereview.html">Mouse</a>
+			<a href="keyboardreview.html">Keyboard</a>	
+			<a href="switchreview.html">Game Console</a>	
+			</div>
+		</div>
+      
+		<div class="dropdown">
+			<button class="dropbtn"> <a href=music.html>My Music</a> <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content"> 
+					
+			<a href="pop.html"><img src="img/poplogo.png" style="right: 1px;"  alt="HG" class="imgLogo2"></a>
+			<a href="rock.html"><img src="img/rocklogo.png" style="right: 1px;" alt="HG" class="imgLogo2"></a>
+			<a href="opm.html"><img src="img/opmlogo.jpg" style="right: 1px;" alt="HG" class="imgLogo2"></a>
+			</div>
+		</div>
+            <a href=about.html>About</a>
+		</div>
+
+	<div class="bg-image">
+		<div class="bg-text">
+			<h1 style="font-size:180px">My Collection</h1>
+		</div>
+	</div>
+
+			<div class = introtext> <p><strong><font color = "#0563b5"> &nbsp; A slight background to my addiction. </font></strong></p> 
+
+			<p> &nbsp;&nbsp;&nbsp; More than about 40 Gundams have been made by me so far all the way back to the disheartening pandemic. These 
+                Gundams or Gunpla (Gundam Plastic Models) hold a special place in my heart during those unfortunate times 
+                where panic were all over the news. It provided me a little solice for myself to quietly build and create something 
+                out of small things. Perhaps, it gives me inspiration leading up to my future endeavors, to build something out of my 
+                small somethings in life. 
+            </p>
+			</div>
+		
+
+                <hr style="height:10px;border-width:0;color:whitesmoke;background-color:whitesmoke">
+
+        <div id="gradient">
+
+            <h2><strong><font color = "whitesmoke"><center> My Collection in the Present Time </center></font></strong></h2>
+
+            <img src="img/Coll1.jpg" alt="Demon Slayer" width = 1000 height = 1000 class="center">
+
+            <h2><strong><font color = "whitesmoke"><center> My Collection during the Pandemic </center></font></strong></h2>
+            <img src="img/Coll2.jpg" alt="Demon Slayer" width = 1000 height = 1000 class="center">
+
+        </div>
+
+		<div class="grid1">
+			<div class="div1"> <b> Multiple Gunpla/ Gundams come Multiple Grades. </b>  </div>
+			<div class="div2"> From the cheap <b>High Grades</b>. To the attention to detail to <b>Real Grades</b>. And to the legendary line of <b>Master Grades</b>.
+				Every line has something to offer to each of us, as it did to me showcased impeccably in this very site.
+			</div>
+			<div class="div3"> <img src="img/hgad.jpg" alt="Naruto" class="img1"> </div>
+			<div class="div4"> <img src="img/rgad.webp" alt="Naruto" class="img2"> </div>
+			<div class="div5"> <img src="img/mgad.jpg" alt="Naruto" class="img3"> </div>
+
+		</div>
+
+		<div class="grid2">
+			<div class="div2-1"> 
+			My collection is composed of many of these lines. Of the current Gunpla/ Gundams that I currently have, shall be displayed to be shown to those interested hopefully to begin their Gunpla/ Gundam collecting journey as well 
+			as seen below to be viewed by clicking on the specific logo, or by simply viewing the lines on the top navigation on the Gundam (My Collections) section.
+			</div>
+			<div class="div2-2"> <a href="hg.html"><img src="img/HGlogo.jpeg" alt="HG" class="img2-1"></a> </div>
+			<div class="div2-3"> <a href="rg.html"><img src="img/RGlogo.jpeg" alt="RG" class="img2-1"></a> </div>
+			<div class="div2-4"> <a href="mg.html"><img src="img/MGlogo.jpeg" alt="MG" class="img2-1"></a> </div>
+		</div>
+
+
+
+	</body>	
+
+	<footer>
+		<div>
+		  <p ><strong> Follow me and my works through: </strong></p>
+		</div>
+
+		<div>
+		  <ul id="footer">
+			<li><a href = "https://www.facebook.com/frances.deguzman.33/" style="color: whitesmoke;"> Facebook </a></li>
+			<li>Email: francestimothy9@gmail.com</li>
+			<li>Mobile: (+63)99778090999</li>
+		  </ul>
+		</div>
+			
+	</footer>
+
+</html>
